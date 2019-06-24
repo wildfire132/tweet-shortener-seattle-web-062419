@@ -15,7 +15,7 @@ dictionary = {
 }
 end 
 
-def word_substituter(string, dictionary)
+def word_substituter(string)
   string_array = string.split(" ")
   keys = dictionary.keys
   string.split(" ").collect do |word|
