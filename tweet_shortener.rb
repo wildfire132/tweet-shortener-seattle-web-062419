@@ -41,11 +41,7 @@ def word_substituter(tweet)
     dictionary.collect do |key, value|
       if word == key 
         word.replace(value)
-      end 
-    end
-  end 
-  words.join(" ")
-e
+
   
 bulk_tweet_shortener(tweet_array)
 tweet_array.collect do |tweet|
