@@ -33,15 +33,15 @@ tweet_array.collect do |tweet|
 end 
 end 
 
-selective_tweet_shortener(tweet)
+def selective_tweet_shortener(tweet)
 if tweet.length > 140 
   word_substituter(tweet)
 end 
 
-shortened_tweet_truncator(tweet)
+def shortened_tweet_truncator(tweet)
 if tweet.length > 140
   word_substituter(tweet)
   puts "#{tweet[0..140]}..."
-
+end
 
   
