@@ -24,5 +24,10 @@ dictionary = {
 end 
 
 def word_substituter(string, dictionary)
-  string.split(", ")
+  string_array = string.split(", ")
+  keys = dictionary.keys
+  string_array.each do |word|
+    if keys.include?(word)
+      string
+  
   
