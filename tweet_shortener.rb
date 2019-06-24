@@ -24,5 +24,5 @@ dictionary = {
 end 
 
 def word_substituter(string, dictionary)
-  
+  string.to_a
   
