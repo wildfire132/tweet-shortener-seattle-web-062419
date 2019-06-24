@@ -26,23 +26,14 @@ end
 def word_substituter(string, dictionary)
   string_array = string.split(" ")
   keys = dictionary.keys
-  string_array.collect do |word|
+  string.split(" ").collect do |word|
     if keys.include?(word)
       word = dictionary[word]
+    else 
+      word = word
     end
-  end
-  string_array.join(" ")
+  end.join(" ")
 end 
-
-def word_substituter(tweet)
-  dict = dictionary
-  words = tweet.split(" ")
-
-  words.collect do |word|
-    dictionary.collect do |key, value|
-      if word == key 
-        word.replace(value)
-
   
 bulk_tweet_shortener(tweet_array)
 tweet_array.collect do |tweet|
