@@ -39,7 +39,7 @@ tweet_array.collect do |tweet|
 end 
 end 
 
-selective_tweet_shortener(tweet_array)
+selective_tweet_shortener(tweet)
 if tweet_array.
   tweet_array.collect do |tweet|
   puts word_substituter(tweet)
