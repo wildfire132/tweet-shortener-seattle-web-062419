@@ -24,13 +24,14 @@ dictionary = {
 end 
 
 def word_substituter(string, dictionary)
-  string_array = string.split(", ")
+  string_array = string.split(" ")
   keys = dictionary.keys
-  string_array.each do |word|
+  string_array.collect do |word|
     if keys.include?(word)
       word = dictionary[word]
     end
   end
+  string_array.join(" ")
 end 
 
 def word_substituter(tweet)
