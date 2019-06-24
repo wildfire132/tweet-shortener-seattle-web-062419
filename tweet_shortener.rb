@@ -34,5 +34,6 @@ def word_substituter(string, dictionary)
 end 
   
 bulk_tweet_shortener(tweet_array)
-  word_substituter
+tweet_array.collect do |tweet|
+  word_substituter(tweet)
   
