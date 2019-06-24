@@ -32,6 +32,20 @@ def word_substituter(string, dictionary)
     end
   end
 end 
+
+def word_substituter(tweet)
+  dict = dictionary
+  words = tweet.split(" ")
+
+  words.collect do |word|
+    dictionary.collect do |key, value|
+      if word == key 
+        word.replace(value)
+      end 
+    end
+  end 
+  words.join(" ")
+e
   
 bulk_tweet_shortener(tweet_array)
 tweet_array.collect do |tweet|
