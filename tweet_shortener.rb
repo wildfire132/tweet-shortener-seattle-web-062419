@@ -41,15 +41,14 @@ elsif tweet.length <= 140
 end
 end 
 
+
 def shortened_tweet_truncator(tweet)
-  tweet.split(" ").collect do |phrase|
-if phrase.length > 140
-  word_substituter(phrase)
-  puts "#{phrase[0..140]}..."
-else
-  phrase
-end
-end.join(" ")
-end
+  if word_substituter(tweet).chars.length > 140  
+    truncated = word_substituter(tweet).chars[0..136].push("...").join("")
+  else 
+    word_substituter(tweet) 
+  end 
+end 
+
 
   
