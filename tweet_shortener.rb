@@ -33,5 +33,5 @@ def word_substituter(string, dictionary)
   end
 end 
   
-
+bulk_tweet_shortener(tweet_array)
   
